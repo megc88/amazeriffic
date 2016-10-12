@@ -1,10 +1,16 @@
 body {
   background: #f9e933;
+  margin: auto;
 }
 
 header, main, footer {
   min-width: 855px;
 }
+
+header.content, main.content, footer.content {
+  max-width: 855px;
+  margin: auto;
+}  
 
 header {
   background: white;
