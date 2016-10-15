@@ -1,21 +1,68 @@
 body {
   background: #f9e933;
-  margin: auto;
 }
+
 
 header, main, footer {
-  min-width: 855px;
+  min-width: 855px;	
 }
 
-header.content, main.content, footer.content {
+header .container, main .container, footer .container {
   max-width: 855px;
   margin: auto;
 }  
 
 header {
   background: white;
+  overflow: hidden;
+}
+
+header h1 {
+  float: left;
+  width: 570px;
+}
+
+header nav {
+  float: right;
+  width: 285px;
 }
 
 main {
   background: white;
+  overflow: hidden;
 }
+
+
+.maintext {
+  float: left;
+  width: 570px;
+}
+
+.lightbulb {
+  float: right;
+  width: 285px;
+}
+
+.contact {
+  float: left;
+  width: 570px;
+}  
+
+
+.sitemap {
+  float: right;
+  max-width: 285px;
+}
+
+.sitemap1 {
+  float: right;
+  width: 142.5px;
+}
+
+.sitemap2 {
+  float: right;
+  width: 142.5px;
+}
+
+
+
