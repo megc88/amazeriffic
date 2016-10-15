@@ -1,6 +1,7 @@
 body {
   background: #f9e933;
   font-family: 'Droid Sans', sans-serif;
+  font-size: 100%;
 }
 
 
@@ -23,9 +24,10 @@ header {
   overflow: hidden;
 }
 
-header h1 {
+h1 {
   float: left;
   width: 570px;
+  font-size: xx-large;
 }
 
 header nav {
@@ -44,6 +46,14 @@ main {
   width: 570px;
 }
 
+h2 {
+  font-size: x-large;
+}
+
+h3 {
+  font-size: larger;
+}
+
 .lightbulb {
   float: right;
   width: 285px;
@@ -54,6 +64,9 @@ main {
   width: 570px;
 }  
 
+h4 {
+  font-size: large;
+}
 
 .sitemap {
   float: right;
