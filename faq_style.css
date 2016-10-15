@@ -59,7 +59,7 @@ main {
   height: 550px;
 }
 
-li {
+main.li {
   font-size: larger;
   font-weight: bold;
   padding-bottom: 10px:
@@ -71,17 +71,6 @@ li {
   padding: 10px;
 }
 
-.info {
-  margin-bottom: 30px;
-}
-
-.maintext {
-  float: left;
-  width: 570px;
-  margin-top: 70px;
-}
-
-
 h3 {
   font-size: large;
 }
@@ -91,19 +80,13 @@ h3 {
   width: 570px;
 }
 
-h4 {
-  font-size: large;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 .sitemap {
   float: right;
   max-width: 285px;
 }
 
 .sitemap1 {
-  float: right;
+  float: left;
   width: 142.5px;
 }
 
@@ -111,5 +94,4 @@ h4 {
   float: right;
   width: 142.5px;
 }
-
 
