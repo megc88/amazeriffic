@@ -22,12 +22,15 @@ h1, h2, h3, h4 {
 header {
   background: white;
   overflow: hidden;
+  padding-top:10px;
+  padding-bottom: 30px;
 }
 
 h1 {
   float: left;
   width: 570px;
   font-size: xx-large;
+  font-style: italic;
 }
 
 header nav {
@@ -40,6 +43,9 @@ main {
   overflow: hidden;
 }
 
+.info {
+  margin-bottom: 30px;
+}
 
 .maintext {
   float: left;
@@ -57,6 +63,7 @@ h3 {
 .lightbulb {
   float: right;
   width: 285px;
+  padding-bottom: 15px;
 }
 
 .contact {
@@ -66,6 +73,9 @@ h3 {
 
 h4 {
   font-size: large;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
 }
 
 .sitemap {
