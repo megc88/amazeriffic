@@ -44,7 +44,7 @@ h1 {
 
 h2 {
   float: left;
-  font size: larger;
+  font-size: larger;
   color: red;
 }
 
@@ -62,7 +62,7 @@ main {
 main.li {
   font-size: larger;
   font-weight: bold;
-  padding-bottom: 10px:
+  padding-bottom: 10px;
 }
 
 .answer {
@@ -73,6 +73,8 @@ main.li {
 
 h3 {
   font-size: large;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .contact {
