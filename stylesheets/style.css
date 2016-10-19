@@ -63,14 +63,19 @@ main {
     padding: 5px;
 }
 
+
+.tabs a span.active {
+  background: #eee;
+}
+
 main li {
   border: 25px;
   margin-bottom: 5px;
-  background: gainsboro;
+  background: whitesmoke;
 }
 
 main .content {
-  background: #999;
+  background: #eee;
   padding: 5px;
 }
 
