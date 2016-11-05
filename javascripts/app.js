@@ -31,12 +31,35 @@ var main = function(toDoObjects) {
        $content.append($("<li>").text(todo));
      });
  } else if ($element.parent().is(":nth-child(3)")) {
-     console.log("the tags tab was clicked");
+     console.log("the tags tab wAS clicked");
+     var organizeByTag = [
+       {
+         "name"; "shopping",
+	 "toDos"; ["Get groceries"]
+       },
+
+       {
+         "name"; "chores",
+	 "toDos": ["Get groceries", "Take Gracie to the park"]
+       }
+     ]
+     organizeByTag.forEach(function (tag) {
+       var $tagName = $("<h3>").text(tag.name),
+       var $content = $("<ul>");
+
+       tag.toDos.forEach(function (description) {
+         var $li = $("<li>").text(description);
+	 $content.append($li);
+       });
+
+       $("main .content").append($tagName);
+       $("main .content").append($content);
+       });
  } else if ($element.parent().is(":nth-child(4)")) {
      $input = $("<input>"),
      $button = $("<button>").text("+");
 
-     $button.on("click", function () {
+     $ibutton.on("click", function () {
        if ($input.val() !== "") {
           toDos.push($input.val());
           $input.val("");
