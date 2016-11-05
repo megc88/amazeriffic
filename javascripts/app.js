@@ -31,7 +31,7 @@ var main = function(toDoObjects) {
        $content.append($("<li>").text(todo));
      });
  } else if ($element.parent().is(":nth-child(3)")) {
-     console.log("the tags tab was clicked);
+     console.log("the tags tab was clicked");
  } else if ($element.parent().is(":nth-child(4)")) {
      $input = $("<input>"),
      $button = $("<button>").text("+");
