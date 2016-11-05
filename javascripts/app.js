@@ -1,13 +1,9 @@
-var main = function() {
+var main = function(toDoObjects) {
   "use strict";
 
-  var toDos = [
-    "Get Groceries",
-    "Eat vegetables",
-    "Hang out with Jane",
-    "Do a little dance",
-    "Blow bubbles"
-    ];
+  var toDos = toDoObjects.map(function (toDo) {
+     return toDo.description;
+   });
   
   $(".tabs a span").toArray().forEach(function(element) {
     var $element = $(element);
@@ -35,16 +31,17 @@ var main = function() {
        $content.append($("<li>").text(todo));
      });
  } else if ($element.parent().is(":nth-child(3)")) {
+     console.log("the tags tab was clicked);
+ } else if ($element.parent().is(":nth-child(4)")) {
      $input = $("<input>"),
      $button = $("<button>").text("+");
 
      $button.on("click", function () {
        if ($input.val() !== "") {
           toDos.push($input.val());
-	  $input.val("");
-	}
+          $input.val("");
+        }
    });
-
    $content = $("<div>").append($input, $button);
 
    }
@@ -61,5 +58,9 @@ var main = function() {
 
 };
 
-$(document).ready(main);
+$(document).ready(function () {
+   $.getJSON("todo.json", function (toDoObjects) {
+      main(toDoObjects);
+   });
+});
 
